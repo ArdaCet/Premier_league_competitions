@@ -7,7 +7,7 @@ This project is not completed yet but since it is a fun-based project, I will tr
 The data retrived from the [link](https://datahub.io/sports-data/english-premier-league)
 
 ### To download the main folder using Python:
-'''
+```
 from datapackage import Package
 
 package = Package('https://datahub.io/sports-data/english-premier-league/datapackage.json')
@@ -19,7 +19,7 @@ print(package.resource_names)
 for resource in package.resources:
     if resource.descriptor['datahub']['type'] == 'derived/csv':
         print(resource.read())
-'''
+```
 
 ### If download through weblink manually:
 
